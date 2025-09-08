@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Siswa SMK</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+  
+</head>
+<body>
+  <header>
+    <h2>PORTOFOLIO</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skill.html">Skill</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>GALLERY</h2>
+    <p>Here is my gallery</p>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h3>PORTOFOLIO</h3>
+    <div class="projects">
+
+      <div class="project">
+        <a href="Latihan 1/index.html">
+          <img src="image.png" alt="Project 1">
+        </a>
+        <h4>Website Sederhana</h4>
+        <p>Dibuat dengan HTML dan CSS.</p>
+      </div>
+
+      <!-- PROJECT -->
+  <div class="project">
+    <img src="art2.jpg" alt="Project 1" id="triggerImage">
+    <h4>Drawing</h4>
+    <p>Sedikit dari hobi menggambar suatu karakter.</p>
+  </div>
+
+  <!-- POPUP -->
+  <div class="popup" id="popup">
+    <div class="close" id="closePopup">&times;</div>
+    <div class="images">
+      <img src="art2.jpg" alt="Gambar 1" class="art">
+      <img src="art1.jpg" alt="Gambar 2" class="art">
+      <img src="art3.jpg" alt="Gambar 3" class="art">
+    </div>
+  </div>
+
+    <!-- Gambar fullscreen -->
+<div id="fullscreen" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:black; justify-content:center; align-items:center; z-index:2000;">
+  <img id="fullscreenImg" src="" style="max-width:90%; max-height:90%; border-radius:10px;" />
+  <span id="closeFull" style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+</div>
+
+    </div>
+  </section>
+
+
+
+  <footer>
+    <p>© 2025 Rajes</p>
+  </footer>
+  
+  <script src="main.js"></script>
+
+</body>
+</html>

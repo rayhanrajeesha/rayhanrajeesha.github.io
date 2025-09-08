@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Siswa SMK</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h2>PORTOFOLIO</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skill.html">Skill</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>CONTACT ME</h2>
+    <p>Tell me if you need something</p>
+  </section>
+
+<div class="contact-container">
+  <form class="contact-form" action="#" method="POST">
+    <h2></h2>
+
+    <label for="name">Nama</label>
+    <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email valid" required>
+
+    <label for="subject">Pilihan Pesan</label>
+    <select id="subject" name="subject" required>
+      <option value="" disabled selected>Pilih salah satu</option>
+      <option value="general">Pertanyaan Umum</option>
+      <option value="project">Kerjasama Proyek</option>
+      <option value="feedback">Masukan & Saran</option>
+      <option value="other">Lainnya</option>
+    </select>
+
+    <label for="message">Pesan</label>
+    <textarea id="message" name="message" placeholder="Tulis pesan kamu di sini..." required></textarea>
+
+    <button type="button" onclick="kirimPesan()">Kirim</button>
+  </form>
+</div>
+ 
+  <footer>
+    <p>© 2025 Rajes</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
